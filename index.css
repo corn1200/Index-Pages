@@ -1,119 +1,50 @@
-.container {
-    font-size: 14px;
-    width: 100vw;
-    height: 100vh;
-    background-color: antiquewhite;
-}
+header, header>div, .menu, .content, .slide, .sub-menu, .sub-menu-item, 
+.sub-menu-item>div, .photo-frame, .photo-frame>a, .banner-frame, .banner-frame>a { display: flex; } 
 
-header {
-    display: flex;
-    width: 100vw;
-    height: 120px;
-    background-color: aquamarine;
-    justify-content: center;
-}
+header, .content, .slide, .sub-menu, .sub-menu-item, .banner-frame, .banner-frame>a { justify-content: center; } 
 
-header>div {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    max-width: 1700px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
+.container { font-size: 14px; width: 100vw; height: 100vh; background-color: antiquewhite; } 
 
-.logo {
-    width: 250px;
-    height: 100%;
-    background-color: beige;
-}
+header { width: 100vw; height: 120px; background-color: aquamarine; } 
 
-.menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-bottom: 10px;
-    z-index: 999;
-}
+header>div { width: 100%; height: 100%; justify-content: space-between; max-width: 1700px; padding-left: 50px; padding-right: 50px; } 
 
-.menu>ul>li {
-    float: left;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-size: 1rem;
-    height: 1rem;
-    width: 4rem;
-    overflow: hidden;
-}
+.logo { width: 250px; height: 100%; background-color: beige; } 
 
-.menu>ul>li:hover {
-    overflow: visible;
-}
+.menu { flex-direction: column; justify-content: flex-end; margin-bottom: 10px; z-index: 999; margin-right: 80px; } 
 
-.menu>ul>li>ul>li {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-}
+.menu>ul>li { text-align: center; float: left; margin-left: 20px; margin-right: 20px; font-size: 1rem; height: 1rem; width: 7rem; overflow: hidden; } 
 
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+.menu>ul>li:hover { overflow: visible; } 
 
-.slide {
-    display: flex;
-    width: 100vw;
-    height: 480px;
-    background-color: cadetblue;
-    justify-content: center;
-}
+.menu>ul>li>ul>li { margin-top: 0.5rem; font-size: 1rem; } 
 
-.slide-item {
-    width: 100%;
-    height: 100%;
-    max-width: 1800px;
-    background-color: chartreuse;
-}
+.content { flex-direction: column; } 
 
-.sub-menu {
-    display: flex;
-    width: 100vw;
-    height: 360px;
-    justify-content: center;
-    background-color: chocolate;
-}
+.slide { width: 100vw; height: 480px; background-color: cadetblue; } 
 
-.sub-menu-item {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    max-width: 1800px;
-    background-color: cornflowerblue;
-    justify-content: center;
-}
+.slide-item { width: 100%; height: 100%; max-width: 1800px; background-color: chartreuse; } 
 
-.sub-menu-item>div {
-    display: flex;
-    width: 30%;
-    height: 100%;
-    background-color: blueviolet;
-    margin: 1px auto;
-    margin-top: 0;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding-left: 10px;
-}
+.sub-menu { width: 100vw; height: 300px; background-color: chocolate; } 
 
-.sub-menu-item>div>div {
-    margin-top: 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+.sub-menu-item { width: 100%; height: 100%; max-width: 1800px; background-color: cornflowerblue; } 
 
-.sub-menu-item>div>ul {
-    margin-top: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-}
+.sub-menu-item>div { width: 30%; height: 100%; background-color: blueviolet; margin: 1px auto; margin-top: 0; flex-wrap: nowrap; flex-direction: column; } 
+
+.sub-menu-item>div>.mini-title { width: 100%; margin-top: 10px; font-size: 1.5rem; font-weight: bold; margin-left: 10px; } 
+
+.sub-menu-item>#notice>ul { margin-top: 10px; font-size: 1rem; font-weight: bold; } 
+
+.photo-frame, .banner-frame { flex-grow: 1; width: 100%; height: 100%; margin-bottom: 15px; } 
+
+.photo-frame { justify-content: space-evenly; } 
+
+.photo-frame>a>img, .banner-frame>a>img { margin-top: 10px; }
+
+.photo-frame>a { width: 30%; height: 100%; } 
+
+.photo-frame>a>img { width: 100%; } 
+
+.banner-frame>a { width: 100%; height: 100%; } 
+
+.banner-frame>a>img { width: 90%; height: 80%; } 
