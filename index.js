@@ -6,7 +6,7 @@ const slide = _ => {
   const len = target.children.length // .slide li 갯수
   const height = target.clientHeight
   // .slide ul의 너비 조정
-  target.style.cssText = `height:calc(100% * ${len});transition:1s`
+  target.style.cssText = `height:calc(100% * ${len});`
   // .slide li의 너비 조정
   Array.from(target.children)
   .forEach(ele => ele.style.cssText = `height:calc(100% / ${len});`)
@@ -19,4 +19,11 @@ const slide = _ => {
 }
 window.onload = function () {
   slide()
+  setTimeout(function() {
+    const wrap = one('.slide-item') // .slide 선택
+    const target = wrap.children[0] // .slide ul 선택
+    const len = target.children.length // .slide li 갯수
+    // .slide ul의 너비 조정
+    target.style.cssText += `transition:1s;`
+  }, 500);
 }

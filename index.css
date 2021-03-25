@@ -1,7 +1,7 @@
 /* flex 속성 주기 */
 .container, header, header>div, .menu, .content, .slide, .sub-menu, .sub-menu-item, .sub-menu-item>div, .photo-frame, 
-.photo-frame>a, .banner-frame, .banner-frame>a, footer, .copyright, footer>div, .slide-item li { display: flex; } 
-header, .content, .slide, .sub-menu, .sub-menu-item, .banner-frame, .banner-frame>a, .copyright { justify-content: center; } 
+.photo-frame>a, .banner-frame, .banner-frame>a, footer, .copyright, footer>div, .slide-item li, .sns-link, .sns-link ul { display: flex; } 
+header, .content, .slide, .sub-menu, .sub-menu-item, .banner-frame, .banner-frame>a, .copyright, .sns-link, footer>div { justify-content: center; } 
 
 /* 컨테이너 */
 .container { font-size: 14px; width: 100vw; height: 100vh; background-color: rgb(255, 255, 255); flex-direction: column; flex-wrap: nowrap; align-items: center; overflow-x: hidden; } 
@@ -9,7 +9,7 @@ header, .content, .slide, .sub-menu, .sub-menu-item, .banner-frame, .banner-fram
 /* 헤더 */
 header { width: 100vw; height: 120px; background-color: rgb(255, 255, 255); z-index: 999; border-bottom: 1px black solid; } 
 header>div { width: 100%; height: 100%; justify-content: space-between; max-width: 1800px; } 
-.logo { width: 250px; height: 100%; margin-left: 50px; } 
+.logo { width: 250px; height: 100%; margin-left: 50px; background-color: aquamarine;} 
 .menu { flex-direction: column; justify-content: flex-end; z-index: 999; margin-top: 28px; } 
 .menu a { text-decoration: none; } 
 .menu>ul { background-color: rgb(255, 255, 255); } 
@@ -21,16 +21,15 @@ header>div { width: 100%; height: 100%; justify-content: space-between; max-widt
 .menu>ul>li>ul>li { background-color: rgb(247, 195, 52); font-size: 1rem; line-height: 50px; height: 0; overflow: hidden; transition: 0.4s; } 
 .menu>ul>li>ul>li:hover { background-color: white; } 
 .menu>ul>li>ul>li:hover>a { background-color: white; color: rgb(247, 195, 52); } 
-.menu>ul>li>ul>li>a { background-color: rgb(247, 195, 52); transition: 0.4s; color: white;} 
+.menu>ul>li>ul>li>a { background-color: rgb(247, 195, 52); transition: 0.4s; color: white; } 
 .menu>ul>li:hover>ul>li { height: 50px; } 
 
 /* 슬라이드 */
-.content { flex-direction: column; justify-content: center; align-items: center; } 
+.content { flex-direction: column; align-items: center; } 
 .slide { width: 100vw; height: 480px; background-color: rgb(255, 255, 255); } 
 .slide-item { width: 100%; height: 100%; max-width: 1800px; background-color: rgb(255, 255, 255); overflow: hidden; } 
-.slide-item ul { height: 100%; } 
-.slide-item li { height: 100%; text-align: center; } 
-.slide-item>img { width: 1800px; height: 1100px; } 
+.slide-item ul { width: 100%; height: 100%; } 
+.slide-item li { width: 100%; height: 100%; text-align: center; } 
 
 /* 공지사항 */
 .sub-menu { width: 100vw; height: 300px; background-color: rgb(255, 255, 255); } 
@@ -55,7 +54,10 @@ header>div { width: 100%; height: 100%; justify-content: space-between; max-widt
 
 /* 푸터 */
 footer { background-color: rgb(255, 255, 255); width: 100%; justify-content: flex-end; flex-grow: 1; flex-direction: column; align-items: center } 
-footer>div { width: 100%; max-width: 1800px; height: 120px; justify-content: space-around; background-color: rgb(228, 228, 228); } 
+footer>div { width: 100%; height: 120px; background-color: rgb(228, 228, 228); } 
 footer>div>.logo { margin-left: 0; } 
-.copyright { font-size: 1.2rem; flex-direction: column; } 
-.sns-link { width: 250px; height: 100%; } 
+.copyright { width: 480px; font-size: 1.2rem; flex-direction: column; margin-left: 410px; margin-right: 410px; text-align: center; } 
+.sns-link { width: 250px; height: 100%; flex-direction: column; } 
+.sns-link ul { justify-content: space-evenly; } 
+.sns-link li { width: 60px; height: 60px; float: left; } 
+.sns-link li img { width: 100%; height: 100%; } 
