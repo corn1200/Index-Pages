@@ -17,6 +17,16 @@ const slide = _ => {
     target.style.marginTop = `${-pos * height}px`
   }, 1500) // 1500 = 1500ms = 1.5sec. 즉, 1.5초 마다 실행
 }
+
+let popupBtn
+let layerSect
+let closeBtn
+function openPopup() {
+  layerSect.classList.remove("closed")
+}
+function closePopup() {
+  layerSect.classList.add("closed")
+}
 window.onload = function () {
   slide()
   setTimeout(function() {
@@ -26,4 +36,9 @@ window.onload = function () {
     // .slide ul의 너비 조정
     target.style.cssText += `transition:1s;`
   }, 500);
+  layerSect = document.querySelector("#layer-section")
+  popupBtn = document.querySelector("#popup-btn")
+  closeBtn = document.querySelector("#close-btn")
+  popupBtn.addEventListener("click", openPopup)
+  closeBtn.addEventListener("click", closePopup)
 }

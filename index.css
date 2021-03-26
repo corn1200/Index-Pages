@@ -5,18 +5,18 @@ header, .content, .slide, .sub-menu, .sub-menu-item, .banner-frame, .banner-fram
 
 /* 컨테이너 */
 .container { font-size: 14px; width: 100vw; height: 100vh; background-color: rgb(255, 255, 255); flex-direction: column; flex-wrap: nowrap; align-items: center; overflow-x: hidden; } 
+a { text-decoration: none; color: black; } 
 
 /* 헤더 */
-header { width: 100vw; height: 120px; background-color: rgb(255, 255, 255); z-index: 999; border-bottom: 1px black solid; } 
+header { width: 100vw; height: 120px; background-color: rgb(255, 255, 255); border-bottom: 1px black solid; } 
 header>div { width: 100%; height: 100%; justify-content: space-between; max-width: 1800px; } 
 .logo { width: 250px; height: 100%; margin-left: 50px; background-color: aquamarine; } 
-.menu { flex-direction: column; justify-content: flex-end; z-index: 999; margin-top: 28px; } 
-.menu a { text-decoration: none; } 
+.menu { flex-direction: column; justify-content: flex-end; margin-top: 28px; } 
 .menu>ul { background-color: rgb(255, 255, 255); } 
 .menu>ul>li { position: relative; text-align: center; float: left; font-size: 1rem; width: 9.5rem; height: 50px; line-height: 50px; text-align: center; transition: 0.5s; } 
 .menu>ul>li:hover { background-color: gray; } 
 .menu>ul>li:hover>a { color: white; } 
-.menu>ul>li>a { color: rgb(0, 0, 0); text-decoration: none; font-weight: bold; } 
+.menu>ul>li>a { font-weight: bold; } 
 .menu>ul>li>ul { width: 9.5rem; } 
 .menu>ul>li>ul>li { background-color: rgb(41, 192, 142); font-size: 1rem; line-height: 50px; height: 0; overflow: hidden; transition: 0.4s; } 
 .menu>ul>li>ul>li:hover { background-color: white; } 
@@ -38,7 +38,7 @@ header>div { width: 100%; height: 100%; justify-content: space-between; max-widt
 .sub-menu-item>div>.mini-title { width: 100%; margin-top: 10px; font-size: 1.5rem; font-weight: bold; margin-left: 10px; } 
 .sub-menu-item>#notice>ul { margin-left: 10px; margin-top: 50px; font-size: 1rem; font-weight: bold; } 
 .sub-menu-item>#notice>ul>li { margin-bottom: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } 
-.sub-menu-item>#notice>ul>li>a { font-size: 1.2rem; text-decoration: none; color: rgb(126, 126, 126); } 
+.sub-menu-item>#notice>ul>li>a { font-size: 1.2rem; color: rgb(126, 126, 126); } 
 .sub-menu-item>#notice>ul>li>a:hover { background-color: rgb(0, 158, 105); color: aliceblue; } 
 
 /* 갤러리 */
@@ -64,8 +64,9 @@ footer>div>.logo { margin-left: 0; }
 .sns-link li img { width: 100%; height: 100%; } 
 
 /* 팝업 */
-.layer{display: none; position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: rgba(0, 0, 0, .5); z-index: 10;}
-.layer>div{background: #fff; width: 500px; margin: 50px auto; padding: 30px;}
-.layer h3{color: blue;}
-.layer p{text-align: justify;}
-.layer__btm{text-align: right; margin-top: 20px;}
+.layer { position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: rgba(0, 0, 0, .5); z-index: 10; } 
+.layer>div { background: #fff; width: 500px; margin: 50px auto; padding: 30px; } 
+.layer h3 { color: rgb(0, 136, 91); font-weight: bold; font-size: 1.2rem; } 
+.layer p { text-align: justify; font-size: 1rem; word-spacing: 0.2rem; line-height: 120%; } 
+.layer__btm { text-align: right; margin-top: 20px; } 
+.closed { display: none; } 
