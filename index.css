@@ -67,6 +67,6 @@ footer>div>.logo { margin-left: 0; }
 .layer { position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: rgba(0, 0, 0, .5); z-index: 10; } 
 .layer>div { background: #fff; width: 500px; margin: 50px auto; padding: 30px; } 
 .layer h3 { color: rgb(0, 136, 91); font-weight: bold; font-size: 1.2rem; } 
-.layer p { text-align: justify; font-size: 1rem; word-spacing: 0.2rem; line-height: 120%; } 
+.layer p { text-align: justify; font-size: 1rem; word-spacing: 0.2rem; line-height: 120%; margin-top: 20px;} 
 .layer__btm { text-align: right; margin-top: 20px; } 
 .closed { display: none; } 
