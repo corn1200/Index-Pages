@@ -1,0 +1,45 @@
+body {
+    font-size: 17px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    background-color: blanchedalmond;
+}
+header {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1.25rem 0 1.25rem;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+}
+.header-menu::after {
+    content: '';
+    display: block;
+    position: absolute;
+    opacity: 0.75;
+    border-top: 1px solid black;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.header-fluid {
+    max-width: 1366px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.header-img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}

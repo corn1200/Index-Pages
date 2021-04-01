@@ -82,5 +82,6 @@ footer>div>.logo { margin-left: 0; }
 .menu { margin: 0 auto; } 
 .menu>ul>li { width: 25%; } 
  }
-@media screen and (max-width: 800px) {.sub-menu-item>div { margin-bottom: 30px; width: 80%; } 
+@media screen and (max-width: 800px){
+ .sub-menu-item>div { margin-bottom: 30px; width: 80%; } 
  }
