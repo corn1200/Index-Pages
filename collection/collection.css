@@ -1,5 +1,11 @@
-body {
+* {
+    margin: 0 auto;
+}
+html {
     font-size: 17px;
+}
+body {
+    font-size: 0.875rem;
 }
 .container {
     display: flex;
@@ -24,7 +30,7 @@ header {
     display: block;
     position: absolute;
     opacity: 0.75;
-    border-top: 1px solid black;
+    border-top: 1px solid currentColor;
     right: 0;
     left: 0;
     bottom: 0;
@@ -36,6 +42,12 @@ header {
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
+}
+.header-nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    width: 100%;
 }
 .header-img {
     max-width: 100%;
