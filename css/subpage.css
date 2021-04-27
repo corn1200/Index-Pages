@@ -23,6 +23,7 @@ header::after { content: ''; display: block; position: absolute; opacity: 0.075;
 .gallery > ul { width: 100%; height: auto; display: flex; flex-wrap: wrap; justify-content: center; } 
 .gallery > ul > li { width: 400px; height: 400px; margin: 0 auto; display: flex; flex-direction: row; justify-content: center; align-items: center; } 
 .gallery > ul > li > div { display: flex; flex-direction: column; justify-content: center; align-items: center; transition: 0.3s ease-in-out; } 
-.gallery img { width: 300px; height: 300px; border: 0.35rem solid rgba(184,157,79,1) !important; opacity: 0.8; transition: 0.3s ease-in-out; cursor: pointer; box-shadow: 0.75rem 0.85rem 1.75rem 0 rgba(0,0,0,.32); } 
-.gallery img:hover { opacity: 1; box-shadow: 0.85rem 0.95rem 1.85rem 0 rgba(0,0,0,.52); margin-bottom: 8px; } 
+.gallery img { background-color: rgba(184,157,79,1); width: 300px; height: 300px; border: 0.35rem solid rgba(184,157,79,1) !important; opacity: 0.8; transition: 0.3s ease-in-out; cursor: pointer; box-shadow: 0.75rem 0.85rem 1.75rem 0 rgba(0,0,0,.32); } 
+.gallery img:hover { opacity: 1; box-shadow: 0.85rem 0.95rem 1.85rem 0 rgba(0,0,0,.52); margin-bottom: 8px; border: 0.15rem solid rgba(184,157,79,1) !important; } 
+.gallery li > div { color: rgb(10, 10, 10); }
 .gallery li > div:hover { font-size: 0.95rem; } 
